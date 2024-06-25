@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="{% static 'images/logo.png' %}" alt="Logo" width="50" />
+        <span>Netflix Stock Price<br />Prediction System</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="{% url 'prediction' %}">Prediction</a></li>
+          <li><a href="{% url 'about' %}">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="about-us">
+        <h1>About Us</h1>
+        <p>
+          Our mission is to provide accurate stock price predictions using
+          cutting-edge technology.
+        </p>
+      </section>
+      <section class="our-team">
+        <h2>Our Team</h2>
+        <div class="team-member">
+          <img src="{% static 'images/abdul.jpg' %}" alt="Team Member" />
+          <div class="team-info">
+            <h3>Abdul Qadir</h3>
+            <p>Chief Executive Officer</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img src="{% static 'images/sohaib.jpg' %}" alt="Team Member" />
+          <div class="team-info">
+            <h3>Muhammad Sohaib</h3>
+            <p>Chief Technology Officer</p>
+          </div>
+        </div>
+      </section>
+      <section class="our-services">
+        <h2>Our Services</h2>
+        <div class="service">
+          <i class="icon-chart"></i>
+          <h3>Data Analysis</h3>
+          <p>We provide in-depth data analysis for stock market trends.</p>
+        </div>
+        <div class="service">
+          <i class="icon-predict"></i>
+          <h3>Price Prediction</h3>
+          <p>Our models predict stock prices with high accuracy.</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Contact us:
+        <a href="mailto:215165@aack.au.edu.pk">215165@aack.au.edu.pk</a><br /><a
+          href="mailto:215194@aack.au.edu.pk"
+          >215194@aack.au.edu.pk</a
+        >
+      </p>
+      <div class="social-media">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/abd-ul-qadir"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+      </div>
+    </footer>
+    <script src="{% static 'js/scripts.js' %}"></script>
+  </body>
+</html>
